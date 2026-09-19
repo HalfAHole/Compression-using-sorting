@@ -29,6 +29,10 @@ Since our numbers are in order we can shrink them.
 We do this by finding the difference between each 2 consecutive numbers starting at 0.
 In our case we get: 1, 1, 1, 2, 1, 1
 Before we needed 3 bits to define our numbers, now we need only 2.
-This size is our mxnumb 
+This size is our mxnumb and indicates the size of our numbers up to 24 bits.
+In our example it is 00001 (add 1 for real value).
+Our NOD is 6 or 101 (add 1 for real value).
+Our header (NOD and mxnumb) is a concatenation of NOD and mxnumb.
+In our case 10100001. 
 
 
